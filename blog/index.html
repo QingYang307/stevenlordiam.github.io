@@ -9,8 +9,14 @@
   <meta name="author" content="Stevenlordiam">
 
   
-  <meta name="description" content="新博客的第一篇文章
-">
+  <meta name="description" content="test www.stevenlordiam.com view source1
+2
+3
+4
+5
+6
+! [rejected] master -&gt; master (non-fast-forward)
+error: failed to push some refs to &#39;https &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -56,7 +62,54 @@
     <article class="post">
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/11/23/xin-bo-ke-di-%5B%3F%5D-pian-wen-zhang/">新博客第一篇</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/11/24/code-preview/">Test Ruby</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-24T14:15:27-05:00" pubdate data-updated="true">Nov 24<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><figure class='code'><figcaption><span>test www.stevenlordiam.com view source</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>! <span class="o">[</span>rejected<span class="o">]</span>        master -&gt; master <span class="o">(</span>non-fast-forward<span class="o">)</span>
+</span><span class='line'>error: failed to push some refs to <span class="s1">&#39;https://github.com/yeesterbunny/yeesterbunny.github.com.git&#39;</span>
+</span><span class='line'>hint: Updates were rejected because the tip of your current branch is behind
+</span><span class='line'>hint: its remote counterpart. Merge the remote changes <span class="o">(</span>e.g. <span class="s1">&#39;git pull&#39;</span><span class="o">)</span>
+</span><span class='line'>hint: before pushing again.
+</span><span class='line'>hint: See the <span class="s1">&#39;Note about fast-forwards&#39;</span> in <span class="s1">&#39;git push --help&#39;</span> <span class="k">for </span>details.
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+</article>
+
+
+    <article class="post">
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/23/xin-bo-ke-di-%5B%3F%5D-pian-wen-zhang/">迁移到了Octopress</a></h1>
     
     
       <p class="meta">
@@ -79,7 +132,17 @@
   </header>
 
 
-  <div class="entry-content"><p>新博客的第一篇文章</p>
+  <div class="entry-content"><p>之前一直在不同的地方写博客，最开始没有什么技术，就只托管到了一些博客网站，从国内的点点到国外的Weebly，一直觉得用的很不爽，总觉得一直用博客网站的模板不自由（虽然可以自己改写css),不能体现自己独（zhuang）特(bi)的个性. 后来还想过使用Wordpress，但是还是觉得wp实在是太老的技术了，作为一个新时代的Coder，怎么还能用十年前的技术呢.于是在这个周六的早上，睡到了十二点然后就决定起来把博客迁移到Octopress.</p>
+
+<p> <img src="/images/blog_image/octopress.jpg"></p>
+
+<p> Octopress号称A blogging framework for hackers，自然少不了折腾。官方介绍是基于Jekyll的静态博客生成系统，原理是自己在本地搭建一个博客目录经过Markdown和Liquid转换，在本地生成静态页面，再通过Git部署到Github上. 由于Github可以让用户自己生成Page，这样连买主机的钱都省了，只需要买个域名就可以搭建自己的独立博客了。</p>
+
+<p> 简单说下这次的建站感受，由于之前玩过Ruby,所以很简单的在bash里面就可以直接安装文档装Gem了，按照官方文档走一遍程序基本上一两个小时就可以搭好所需要的一切环境。接下来写文章就容易了，<code>rake  new_post["title"]</code>就在本地生成一个Markdown文件，然后自己修改Markdown文件就可以写好日志，接着<code>rake generate</code>就可以在本地把Markdown文件转换成静态Jekyll网页，<code>rake preview</code>可以在本地<a href="http://localhost:4000/">http://localhost:4000/</a>预览生成的页面，觉得不错就可以发布到服务器了，<code>rake deploy</code>.</p>
+
+<p> 当然，要是建网站这么简单，怎么会叫A blogging framework for hackers呢，就算按照官方程序走一遍都会遇到一些小问题，下篇文章就来说说怎么解决这些问题的。</p>
+
+<p> 最后推荐一个Markdown编辑器，<a href="http://mouapp.com/">Mou</a>，国内一个独立开发者写的，用过的都说好。</p>
 </div>
   
   

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: code, | Steven's Blog]]></title>
+  <link href="http://stevenlordiam.github.io/blog/categories/code/atom.xml" rel="self"/>
+  <link href="http://stevenlordiam.github.io/"/>
+  <updated>2013-11-24T15:32:12-05:00</updated>
+  <id>http://stevenlordiam.github.io/</id>
+  <author>
+    <name><![CDATA[Stevenlordiam]]></name>
+    <email><![CDATA[stevenlordiam@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[test ruby]]></title>
+    <link href="http://stevenlordiam.github.io/blog/2013/11/24/code-preview/"/>
+    <updated>2013-11-24T14:15:27-05:00</updated>
+    <id>http://stevenlordiam.github.io/blog/2013/11/24/code-preview</id>
+    <content type="html"><![CDATA[<p><code>bash test www.stevenlordiam.com view source
+! [rejected]        master -&gt; master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/yeesterbunny/yeesterbunny.github.com.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>
