@@ -4,7 +4,7 @@
   <title><![CDATA[Category: code, | Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2013-11-24T15:32:12-05:00</updated>
+  <updated>2013-11-24T16:18:40-05:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
     <name><![CDATA[Stevenlordiam]]></name>
@@ -14,18 +14,50 @@
 
   
   <entry>
-    <title type="html"><![CDATA[test ruby]]></title>
+    <title type="html"><![CDATA[使用Octopress遇到的问题及解决方法]]></title>
     <link href="http://stevenlordiam.github.io/blog/2013/11/24/code-preview/"/>
     <updated>2013-11-24T14:15:27-05:00</updated>
     <id>http://stevenlordiam.github.io/blog/2013/11/24/code-preview</id>
-    <content type="html"><![CDATA[<p><code>bash test www.stevenlordiam.com view source
+    <content type="html"><![CDATA[<p>这篇文章说说安装Octopress时遇到的问题和我想到的解决方式。</p>
+
+<p>1.No such directory</p>
+
+<p>很简单，改路径
+<code>bash
+cd octopress
+</code></p>
+
+<p>2.Github页面404</p>
+
+<p>因为没有配置好Github页面，之前Github都用的是username.github.com，现在要改成username.github.io. 如果是绑定独立域名，则A记录和CNAME都要添加。</p>
+
+<p>3.配置好了Git之后使用 rake deploy
+遇到了下面的错误</p>
+
+<p><code>bash
 ! [rejected]        master -&gt; master (non-fast-forward)
-error: failed to push some refs to 'https://github.com/yeesterbunny/yeesterbunny.github.com.git'
+error: failed to push some refs to 'https://github.com/stevenlordiam/stevenlordiam.github.io.git'
 hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
 hint: before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+</code>
+同样的问题stackoverflow上也有很多人问，Google了各种方法都不行，有的说是SSL密钥设置问题，有的说是Git版本冲突。最后发现了解决方法：master branch在octopress/_depoly文件夹里面，进入这个文件夹再pull，然后回到octopress文件夹再deploy就成功了。</p>
+
+<p><code>bash
+cd octopress/_deploy
+git pull origin master
+cd ..
+rake deploy
 </code></p>
+
+<p>到这里基本上Blog就成型了。下一步的工作：</p>
+
+<p>-添加标签云</p>
+
+<p>-加快界面加载速度</p>
+
+<p>-移动端浏览优化</p>
 ]]></content>
   </entry>
   

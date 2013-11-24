@@ -9,14 +9,8 @@
   <meta name="author" content="Stevenlordiam">
 
   
-  <meta name="description" content="test www.stevenlordiam.com view source1
-2
-3
-4
-5
-6
-! [rejected] master -&gt; master (non-fast-forward)
-error: failed to push some refs to &#39;https &hellip;">
+  <meta name="description" content="这篇文章说说安装Octopress时遇到的问题和我想到的解决方式。 1.No such directory 很简单，改路径 1
+cd octopress 2.Github页面404 因为没有配置好Github页面，之前Github都用的是username.github.com， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,7 +58,7 @@ error: failed to push some refs to &#39;https &hellip;">
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/11/24/code-preview/">Test Ruby</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/11/24/code-preview/">使用Octopress遇到的问题及解决方法</a></h1>
     
     
       <p class="meta">
@@ -87,20 +81,59 @@ error: failed to push some refs to &#39;https &hellip;">
   </header>
 
 
-  <div class="entry-content"><figure class='code'><figcaption><span>test www.stevenlordiam.com view source</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+  <div class="entry-content"><p>这篇文章说说安装Octopress时遇到的问题和我想到的解决方式。</p>
+
+<p>1.No such directory</p>
+
+<p>很简单，改路径</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd </span>octopress
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2.Github页面404</p>
+
+<p>因为没有配置好Github页面，之前Github都用的是username.github.com，现在要改成username.github.io. 如果是绑定独立域名，则A记录和CNAME都要添加。</p>
+
+<p>3.配置好了Git之后使用 rake deploy
+遇到了下面的错误</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>! <span class="o">[</span>rejected<span class="o">]</span>        master -&gt; master <span class="o">(</span>non-fast-forward<span class="o">)</span>
-</span><span class='line'>error: failed to push some refs to <span class="s1">&#39;https://github.com/yeesterbunny/yeesterbunny.github.com.git&#39;</span>
+</span><span class='line'>error: failed to push some refs to <span class="s1">&#39;https://github.com/stevenlordiam/stevenlordiam.github.io.git&#39;</span>
 </span><span class='line'>hint: Updates were rejected because the tip of your current branch is behind
 </span><span class='line'>hint: its remote counterpart. Merge the remote changes <span class="o">(</span>e.g. <span class="s1">&#39;git pull&#39;</span><span class="o">)</span>
 </span><span class='line'>hint: before pushing again.
 </span><span class='line'>hint: See the <span class="s1">&#39;Note about fast-forwards&#39;</span> in <span class="s1">&#39;git push --help&#39;</span> <span class="k">for </span>details.
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p>同样的问题stackoverflow上也有很多人问，Google了各种方法都不行，有的说是SSL密钥设置问题，有的说是Git版本冲突。最后发现了解决方法：master branch在octopress/_depoly文件夹里面，进入这个文件夹再pull，然后回到octopress文件夹再deploy就成功了。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd </span>octopress/_deploy
+</span><span class='line'>git pull origin master
+</span><span class='line'><span class="nb">cd</span> ..
+</span><span class='line'>rake deploy
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>到这里基本上Blog就成型了。下一步的工作：</p>
+
+<p>-添加标签云</p>
+
+<p>-加快界面加载速度</p>
+
+<p>-移动端浏览优化</p>
 </div>
   
   
@@ -142,7 +175,7 @@ error: failed to push some refs to &#39;https &hellip;">
 
 <p> Octopress号称A blogging framework for hackers，自然少不了折腾。官方介绍是基于Jekyll的静态博客生成系统，原理是自己在本地搭建一个博客目录经过Markdown和Liquid转换，在本地生成静态页面，再通过Git部署到Github上. 由于Github可以让用户自己生成Page，这样连买主机的钱都省了，只需要买个域名就可以搭建自己的独立博客了。</p>
 
-<p> 简单说下这次的建站感受，由于之前玩过Ruby,所以很简单的在bash里面就可以直接安装文档装Gem了，按照官方文档走一遍程序基本上一两个小时就可以搭好所需要的一切环境。接下来写文章就容易了，<code>rake  new_post["title"]</code>就在本地生成一个Markdown文件，然后自己修改Markdown文件就可以写好日志，接着<code>rake generate</code>就可以在本地把Markdown文件转换成静态Jekyll网页，<code>rake preview</code>可以在本地<a href="http://localhost:4000/">http://localhost:4000/</a>预览生成的页面，觉得不错就可以发布到服务器了，<code>rake deploy</code>.</p>
+<p> 简单说下这次的建站感受，由于之前玩过Ruby,所以很简单的在bash里面就可以直接安装文档装Gem了，按照官方文档走一遍程序基本上一两个小时就可以搭好所需要的一切环境。接下来写文章就容易了，<code>rake new_post["title"]</code>就在本地生成一个Markdown文件，然后自己修改Markdown文件就可以写好日志，接着<code>rake generate</code>就可以在本地把Markdown文件转换成静态Jekyll网页，<code>rake preview</code>可以在本地<a href="http://localhost:4000/">http://localhost:4000/</a>预览生成的页面，觉得不错就可以发布到服务器了，<code>rake deploy</code>.</p>
 
 <p> 当然，要是建网站这么简单，怎么会叫A blogging framework for hackers呢，就算按照官方程序走一遍都会遇到一些小问题，下篇文章就来说说怎么解决这些问题的。</p>
 
@@ -167,7 +200,7 @@ error: failed to push some refs to &#39;https &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/11/24/code-preview/">test ruby</a>
+        <a href="/blog/2013/11/24/code-preview/">使用Octopress遇到的问题及解决方法</a>
       </li>
     
       <li class="post">
