@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://stevenlordiam.github.io/sitemap.xml 
