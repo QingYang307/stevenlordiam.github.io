@@ -1,12 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://stevenlordiam.github.io/blog/2013/06/15/tywin-lannister-quote/</loc>
-        <lastmod>2013-11-23T22:41:05-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://stevenlordiam.github.io/blog/2013/11/23/test-title/</loc>
-        <lastmod>2013-11-23T22:41:05-05:00</lastmod>
+        <loc>
+            http://stevenlordiam.github.io/blog/2013/11/23/xin-bo-ke-di-%5B%3F%5D-pian-wen-zhang/
+        </loc>
+        <lastmod>2013-11-23T23:01:05-05:00</lastmod>
     </url>
     <url>
         <loc>http://stevenlordiam.github.io/404.html</loc>
@@ -14,7 +12,7 @@
     </url>
     <url>
         <loc>http://stevenlordiam.github.io/blog/archives/</loc>
-        <lastmod>2013-11-23T22:41:05-05:00</lastmod>
+        <lastmod>2013-11-23T23:01:05-05:00</lastmod>
     </url>
     <url>
         <loc>http://stevenlordiam.github.io/blog/categories/</loc>
@@ -22,11 +20,11 @@
     </url>
     <url>
         <loc>http://stevenlordiam.github.io/blog/</loc>
-        <lastmod>2013-11-23T22:41:05-05:00</lastmod>
+        <lastmod>2013-11-23T23:01:05-05:00</lastmod>
     </url>
     <url>
         <loc>http://stevenlordiam.github.io/</loc>
-        <lastmod>2013-11-23T22:41:05-05:00</lastmod>
+        <lastmod>2013-11-23T23:01:05-05:00</lastmod>
     </url>
     <url>
         <loc>http://stevenlordiam.github.io/robots.txt</loc>
