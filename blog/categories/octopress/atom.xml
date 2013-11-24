@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2013-11-24T16:18:40-05:00</updated>
+  <updated>2013-11-24T16:31:46-05:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
     <name><![CDATA[Stevenlordiam]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[使用Octopress遇到的问题及解决方法]]></title>
-    <link href="http://stevenlordiam.github.io/blog/2013/11/24/code-preview/"/>
+    <link href="http://stevenlordiam.github.io/blog/20131124/"/>
     <updated>2013-11-24T14:15:27-05:00</updated>
-    <id>http://stevenlordiam.github.io/blog/2013/11/24/code-preview</id>
+    <id>http://stevenlordiam.github.io/blog/code-preview</id>
     <content type="html"><![CDATA[<p>这篇文章说说安装Octopress时遇到的问题和我想到的解决方式。</p>
 
 <p>1.No such directory</p>
