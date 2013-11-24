@@ -10,7 +10,7 @@
 
   
   <meta name="description" content="这篇文章说说安装Octopress时遇到的问题和我想到的解决方式。 1.No such directory 很简单，改路径 1
-cd octopress 2.Github页面404 因为没有配置好Github页面，之前Github都用的是username.github.com， &hellip;">
+cd octopress ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -104,50 +104,14 @@ cd octopress 2.Github页面404 因为没有配置好Github页面，之前Github�
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>2.Github页面404</p>
-
-<p>因为没有配置好Github页面，之前Github都用的是username.github.com，现在要改成username.github.io. 如果是绑定独立域名，则A记录和CNAME都要添加。</p>
-
-<p>3.配置好了Git之后使用 rake deploy
-遇到了下面的错误</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>! <span class="o">[</span>rejected<span class="o">]</span>        master -&gt; master <span class="o">(</span>non-fast-forward<span class="o">)</span>
-</span><span class='line'>error: failed to push some refs to <span class="s1">&#39;https://github.com/stevenlordiam/stevenlordiam.github.io.git&#39;</span>
-</span><span class='line'>hint: Updates were rejected because the tip of your current branch is behind
-</span><span class='line'>hint: its remote counterpart. Merge the remote changes <span class="o">(</span>e.g. <span class="s1">&#39;git pull&#39;</span><span class="o">)</span>
-</span><span class='line'>hint: before pushing again.
-</span><span class='line'>hint: See the <span class="s1">&#39;Note about fast-forwards&#39;</span> in <span class="s1">&#39;git push --help&#39;</span> <span class="k">for </span>details.
-</span></code></pre></td></tr></table></div></figure>
 
 
-<p>同样的问题stackoverflow上也有很多人问，Google了各种方法都不行，有的说是SSL密钥设置问题，有的说是Git版本冲突。最后发现了解决方法：master branch在octopress/_depoly文件夹里面，进入这个文件夹再pull，然后回到octopress文件夹再deploy就成功了。</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd </span>octopress/_deploy
-</span><span class='line'>git pull origin master
-</span><span class='line'><span class="nb">cd</span> ..
-</span><span class='line'>rake deploy
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>到这里基本上Blog就成型了。下一步的工作：</p>
-
-<p>-添加标签云</p>
-
-<p>-加快界面加载速度</p>
-
-<p>-移动端浏览优化</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/20131124/">Read more →</a>
+    </footer>
   
 
 </article>
