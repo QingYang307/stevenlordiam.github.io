@@ -4,7 +4,7 @@
   <title><![CDATA[Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2013-12-02T19:43:06-05:00</updated>
+  <updated>2013-12-02T20:04:43-05:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
     <name><![CDATA[Stevenlordiam]]></name>
@@ -14,15 +14,15 @@
 
   
   <entry>
-    <title type="html"><![CDATA[使用Octopress遇到的问题及解决方法]]></title>
+    <title type="html"><![CDATA[How I fixed Octopress installing issues]]></title>
     <link href="http://stevenlordiam.github.io/blog/20131124/"/>
     <updated>2013-11-24T14:15:27-05:00</updated>
     <id>http://stevenlordiam.github.io/blog/code-preview</id>
-    <content type="html"><![CDATA[<p>这篇文章说说安装Octopress时遇到的问题和我想到的解决方式。</p>
+    <content type="html"><![CDATA[<p>In this post I will talk about the installing issues I met and how I fixed them when I tried to install Octopress from the official Octopress website.</p>
 
 <p>1.No such directory</p>
 
-<p>很简单，改路径</p>
+<p>It&rsquo;s easy, just change the path.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd </span>octopress
@@ -34,12 +34,11 @@
 <!--more-->
 
 
-<p>2.Github页面404</p>
+<p>2.Github Page 404</p>
 
-<p>因为没有配置好Github页面，之前Github都用的是username.github.com，现在要改成username.github.io. 如果是绑定独立域名，则A记录和CNAME都要添加。</p>
+<p>Because you don&rsquo;t host the Github page correctly，previously Github use <em>username.github.com</em>，but now it&rsquo;s <em>username.github.io</em>. If you want your own domain，change both A record and CNAME.</p>
 
-<p>3.配置好了Git之后使用 rake deploy
-遇到了下面的错误</p>
+<p>3.I met this when I configured git and used <code>rake deploy</code></p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -56,7 +55,8 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>同样的问题stackoverflow上也有很多人问，Google了各种方法都不行，有的说是SSL密钥设置问题，有的说是Git版本冲突。最后发现了解决方法：master branch在octopress/_depoly文件夹里面，进入这个文件夹再pull，然后回到octopress文件夹再deploy就成功了。</p>
+<p>Many people asked the same question on stackoverflow, I tried to Google but none can fix this. Some said it&rsquo;s SSL problem, some say it&rsquo;s version collision of git. Finally I fixed this problem by this step:
+master branch is in octopress/_depoly, pull after going into this folder and come back to octopress folder and deploy. It works!</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -69,13 +69,13 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>到这里基本上Blog就成型了。下一步的工作：</p>
+<p>The blog is almost set. Next step：</p>
 
-<p><del>-添加标签云</del></p>
+<p><del>-Add Tag Cloud</del></p>
 
-<p>-加快界面加载速度</p>
+<p>-Make the webpage load faster</p>
 
-<p>-移动端浏览优化</p>
+<p>-Mobile page optimization</p>
 ]]></content>
   </entry>
   
