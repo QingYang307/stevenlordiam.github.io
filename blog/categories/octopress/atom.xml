@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2013-12-02T20:07:25-05:00</updated>
+  <updated>2013-12-02T20:08:28-05:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
     <name><![CDATA[Stevenlordiam]]></name>
@@ -45,7 +45,7 @@ hint: before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 </code>
 Many people asked the same question on stackoverflow, I tried to Google but none can fix this. Some said it&rsquo;s SSL problem, some say it&rsquo;s version collision of git. Finally I fixed this problem by this step:
-master branch is in <em>octopress/_depoly</em>, pull after going into this folder and come back to octopress folder and deploy. It works!</p>
+master branch is in <code>octopress/_depoly</code>, pull after going into this folder and come back to octopress folder and deploy. It works!</p>
 
 <p><code>bash
 cd octopress/_deploy
