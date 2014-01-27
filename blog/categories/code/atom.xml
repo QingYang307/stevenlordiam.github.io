@@ -4,7 +4,7 @@
   <title><![CDATA[Category: code, | Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2014-01-02T20:40:31+08:00</updated>
+  <updated>2014-01-27T06:05:55-05:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
     <name><![CDATA[Stevenlordiam]]></name>
@@ -15,8 +15,8 @@
   
   <entry>
     <title type="html"><![CDATA[How I fixed Octopress installing issues]]></title>
-    <link href="http://stevenlordiam.github.io/blog/20131125/"/>
-    <updated>2013-11-25T03:15:27+08:00</updated>
+    <link href="http://stevenlordiam.github.io/blog/20131124/"/>
+    <updated>2013-11-24T14:15:27-05:00</updated>
     <id>http://stevenlordiam.github.io/blog/code-preview</id>
     <content type="html"><![CDATA[<p>In this post I will talk about the installing issues I met and how I fixed them when I tried to install Octopress from the official Octopress website.</p>
 
