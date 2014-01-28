@@ -4,7 +4,7 @@
   <title><![CDATA[Category: code, | Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2014-01-27T19:53:48-05:00</updated>
+  <updated>2014-01-28T13:10:01-05:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
     <name><![CDATA[Stevenlordiam]]></name>
@@ -44,7 +44,7 @@ hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
 hint: before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 </code>
-Many people asked the same question on stackoverflow, I tried to Google but none can fix this. Some said it&rsquo;s SSL problem, some say it&rsquo;s version collision of git. Finally I fixed this problem by this step:
+Many people asked the same question on stackoverflow, I tried to Google but none can fix this. Some said it&rsquo;s SSH problem, some say it&rsquo;s version collision of git. Finally I fixed this problem by this step:
 master branch is in <code>octopress/_depoly</code>, pull after going into this folder and come back to octopress folder and deploy. It works!</p>
 
 <p><code>bash
