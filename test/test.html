@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test</title>
-  <style>
-	*{margin:0 auto; padding:0 auto;}
-	body { background-color:#000}
-	#container {  width:800px; height:600px;background-color:#FFF;background-image:url(http://www.wallpaperhi.com/thumbnails/detail/20120203/sunrise%20outer%20space%20horizon%20planets%20earth%20bright%201680x1050%20wallpaper_www.wallpaperhi.com_80.jpg)}   
+  <title>Cloud</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+  <script src="http://cloud.github.com/plax.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.cloud-1').plaxify({"xRange":300,"yRange":300})
+      $.plax.enable()
+    })
+  </script>
+  <style type="text/css">
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    html {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      position: relative;
+      background-color: #fafafa;
+      background-image: -moz-linear-gradient(top, #fafafa, #fafafa);
+      background-image: -ms-linear-gradient(top, #fafafa, #fafafa);
+      background-image: -o-linear-gradient(top, #fafafa, #fafafa);
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#fafafa));
+      background-image: -webkit-linear-gradient(top, #fafafa, #fafafa);
+      background-image: linear-gradient(top, #fafafa, #fafafa);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#fafafa');
+      height: 100%;
+      overflow: hidden;
+    }
+    .shell {
+      position: relative;
+      height: 800px;
+      width: 1000px;
+      margin: 0 auto;
+    }
+    .cloud-1 {
+      position: absolute;
+    }
+    .cloud-1 {
+      top: 256px;
+      left: 256px;
+      z-index: 1;
+    }
+
   </style>
-  
-  <div id="container">
-  </div> 
 </head>
+<body>
+  <div class="shell">
+    <img src="http://www.flaticon.com/png/256/22290.png" class="cloud-1" width="256" height="256"/>
+    <A HREF="http://www.stevenlordiam.com/test/test.html"><center>Click Here</center></A>
+  </div>
+</body>
 </html>
