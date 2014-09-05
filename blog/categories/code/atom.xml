@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: code, | Steven's Blog]]></title>
+  <title><![CDATA[Category: Code, | Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2014-09-04T21:29:51-04:00</updated>
+  <updated>2014-09-04T21:35:20-04:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
     <name><![CDATA[Stevenlordiam]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[How I fixed Octopress installing issues]]></title>
+    <title type="html"><![CDATA[How I Fixed Octopress Installing Issues]]></title>
     <link href="http://stevenlordiam.github.io/blog/20131124/"/>
     <updated>2013-11-24T14:15:27-05:00</updated>
     <id>http://stevenlordiam.github.io/blog/code-preview</id>
