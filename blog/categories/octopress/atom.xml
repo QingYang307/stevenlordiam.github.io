@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2014-07-05T16:53:53+08:00</updated>
+  <updated>2014-09-04T21:04:44-04:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
     <name><![CDATA[Stevenlordiam]]></name>
@@ -15,8 +15,8 @@
   
   <entry>
     <title type="html"><![CDATA[How I fixed Octopress installing issues]]></title>
-    <link href="http://stevenlordiam.github.io/blog/20131125/"/>
-    <updated>2013-11-25T03:15:27+08:00</updated>
+    <link href="http://stevenlordiam.github.io/blog/20131124/"/>
+    <updated>2013-11-24T14:15:27-05:00</updated>
     <id>http://stevenlordiam.github.io/blog/code-preview</id>
     <content type="html"><![CDATA[<p>In this post I will talk about the installing issues I met and how I fixed them when I tried to install Octopress from the official Octopress website.</p>
 
@@ -66,8 +66,8 @@ rake deploy
   
   <entry>
     <title type="html"><![CDATA[迁移到了Octopress]]></title>
-    <link href="http://stevenlordiam.github.io/blog/20131124/"/>
-    <updated>2013-11-24T11:59:02+08:00</updated>
+    <link href="http://stevenlordiam.github.io/blog/20131123/"/>
+    <updated>2013-11-23T22:59:02-05:00</updated>
     <id>http://stevenlordiam.github.io/blog/xin-bo-ke-di-[?]-pian-wen-zhang</id>
     <content type="html"><![CDATA[<p>之前一直在不同的地方写博客，最开始没有什么技术，就只托管到了一些博客网站，从国内的点点到国外的Weebly，一直觉得用的很不爽，总觉得一直用博客网站的模板不自由（虽然可以自己改写css),不能体现自己独（zhuang）特(bi)的个性. 后来还想过使用Wordpress，但是还是觉得wp实在是太老的技术了，作为一个新时代的Coder，怎么还能用十年前的技术呢.于是在这个周六的早上，睡到了十二点然后就决定起来把博客迁移到Octopress.</p>
 
