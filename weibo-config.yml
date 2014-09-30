@@ -1,0 +1,5 @@
+# Sina Weibo Post
+access_token: 2.00x5OIxB0ABtww7101d0dde5tix8KE
+post_template: test
+
+# 我在www.stevenlordiam.com上发表了最新博客《%{blog_title}》，请访问链接：%{blog_url}

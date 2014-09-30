@@ -3,5 +3,7 @@ layout: page
 sharing: false
 ---
 
-## Crap!!
-Looks like the page you're looking for doesn't exist. Just go [home](/) and try again!
+## What are you looking for? Looks like the page you're looking for doesn't exist. Just go [home](/) and try again :)
+
+  {% img /images/blog_image/404.png %}
+

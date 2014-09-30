@@ -398,3 +398,9 @@ task :list do
   puts "Tasks: #{(Rake::Task.tasks - [Rake::Task[:list]]).join(', ')}"
   puts "(type rake -T for more detail)\n\n"
 end
+
+desc "Post the title and url of latest blog to Sina Weibo"
+    task :weibo do
+    puts "Post the title and url of latest blog to Sina Weibo"
+    system "ruby _custom/post_weibo.rb"
+end

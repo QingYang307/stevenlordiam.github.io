@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+	<title>Steven's photo.</title>
+		<link rel="stylesheet" href="/css/instagramstyle.css" type="text/css" media="screen" />
+<body id="myphoto">
+	<div id="instafeed"></div>
+	<script src="/js/instafeed.min.js"></script>
+	<script type="text/javascript">
+	    var feed = new Instafeed({
+			get: 'user',
+			userId: 21045371,
+		    accessToken: '21045371.4f9d23f.8cc98f9f7fc4483c80d94724cba21afd',
+			link: 'true',
+			clientId: '4f9d23f4e9714ddbaa982c33ef4d6aa1',
+			limit: '60'
+	    });
+	    feed.run();
+	</script>
+</body>
+</html>
