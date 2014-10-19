@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Java | Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/blog/categories/java/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2014-10-19T02:00:58-04:00</updated>
+  <updated>2014-10-19T02:04:38-04:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
     <name><![CDATA[Stevenlordiam]]></name>
@@ -23,7 +23,14 @@
 <!--more-->
 
 
-<p>Say we have some java class files with package <code>A.B.C</code> and are located in <code>~/Users/USER_NAME/documents/src/main/java/A/B/C</code> folder. We can compile them with <code>javac</code> command <code>javac ~/Users/USER_NAME/documents/src/main/java/A/B/C/*.java</code> if we are in the root or other directory. Then we can run these files with <code>java</code> command <code>java -cp ~/Users/USER_NAME/documents/src/main/java A.B.C.YOUR_JAVA_CLASS</code>.</p>
+<p>Say we have some java class files with package <code>A.B.C</code> and are located in <code>~/Users/USER_NAME/documents/src/main/java/A/B/C</code> folder. We can compile them with <code>javac</code> command
+<code>
+javac ~/Users/USER_NAME/documents/src/main/java/A/B/C/*.java
+</code>
+if we are in the root or other directory. Then we can run these files with <code>java</code> command
+<code>
+java -cp ~/Users/USER_NAME/documents/src/main/java A.B.C.YOUR_JAVA_CLASS
+</code></p>
 
 <p>If we are in some specific directory like <code>documents</code>, it’s simpler.
 <code>
