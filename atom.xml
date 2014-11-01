@@ -4,7 +4,7 @@
   <title><![CDATA[Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2014-10-31T20:49:44-04:00</updated>
+  <updated>2014-10-31T20:52:29-04:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
     <name><![CDATA[Stevenlordiam]]></name>
@@ -12,41 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Thoughts About Javac Usage With Package]]></title>
-    <link href="http://stevenlordiam.github.io/blog/20141019/"/>
-    <updated>2014-10-19T01:36:57-04:00</updated>
-    <id>http://stevenlordiam.github.io/blog/thoughts-about-javac-usage-with-package</id>
-    <content type="html"><![CDATA[<p>I was long confused about the usage of javac and java with package. When I took java course in NYU, I encountered one homework problem about this knowledge. So I tried to learn from Google and stackoverflow, and finally, I figured it out.</p>
-
-<!--more-->
-
-
-<p>Say we have some java class files with package <code>A.B.C</code> and are located in <code>~/Users/USER_NAME/documents/src/main/java/A/B/C</code> folder. We can compile them with <code>javac</code> command</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>javac ~/Users/USER_NAME/documents/src/main/java/A/B/C/*.java</span></code></pre></td></tr></table></div></figure>
-
-
-<p>
-if we are in the root or other directory. Then we can run these files with <code>java</code> command</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>java -cp ~/Users/USER_NAME/documents/src/main/java A.B.C.YOUR_JAVA_CLASS</span></code></pre></td></tr></table></div></figure>
-
-
-<p>If we are in some specific directory like <code>documents</code>, it’s simpler.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>javac src/main/java/A/B/C/*.java
-</span><span class='line'>java -cp ./src/main/java A.B.C.YOUR_JAVA_CLASS</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The reason for this is that we have to specifc the file location in <code>java</code> command with <code>-cp PATH PACKAGE</code></p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[2013]]></title>
