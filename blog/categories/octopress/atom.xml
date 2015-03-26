@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | Steven's Blog]]></title>
+  <link href="http://stevenlordiam.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://stevenlordiam.github.io/"/>
+  <updated>2015-03-26T19:26:54-04:00</updated>
+  <id>http://stevenlordiam.github.io/</id>
+  <author>
+    <name><![CDATA[Stevenlordiam]]></name>
+    <email><![CDATA[stevenlordiam@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How I Fixed Octopress Installing Issues]]></title>
+    <link href="http://stevenlordiam.github.io/blog/20131124/"/>
+    <updated>2013-11-24T14:15:27-05:00</updated>
+    <id>http://stevenlordiam.github.io/blog/code-preview</id>
+    <content type="html"><![CDATA[<p>In this post I will talk about the installing issues I met and how I fixed them when I tried to install Octopress from the official Octopress website.</p>
+
+<p>1.No such directory</p>
+
+<p>It&rsquo;s easy, just change the path.
+<code>bash
+cd octopress
+</code></p>
+
+<!--more-->
+
+
+<p>2.Github Page 404</p>
+
+<p>Because you don&rsquo;t host the Github page correctly，previously Github use <em>username.github.com</em>，but now it&rsquo;s <em>username.github.io</em>. If you want your own domain，change both A record and CNAME.</p>
+
+<p>3.I met this when I configured git and used <code>rake deploy</code></p>
+
+<p><code>bash
+! [rejected]        master -&gt; master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/stevenlordiam/stevenlordiam.github.io.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+</code>
+Many people asked the same question on stackoverflow, I tried to Google but none can fix this. Some said it&rsquo;s SSH problem, some say it&rsquo;s version collision of git. Finally I fixed this problem by this step:
+master branch is in <code>octopress/_depoly</code>, pull after going into this folder and come back to octopress folder and deploy. It works!</p>
+
+<p><code>bash
+cd octopress/_deploy
+git pull origin master
+cd ..
+rake deploy
+</code></p>
+
+<p>The blog is almost set. Next step：</p>
+
+<p><del>-Add Tag Cloud</del></p>
+
+<p>-Make the webpage load faster</p>
+
+<p>-Mobile page optimization</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[迁移到了Octopress]]></title>
+    <link href="http://stevenlordiam.github.io/blog/20131123/"/>
+    <updated>2013-11-23T22:59:02-05:00</updated>
+    <id>http://stevenlordiam.github.io/blog/xin-bo-ke-di-[?]-pian-wen-zhang</id>
+    <content type="html"><![CDATA[<p>之前一直在不同的地方写博客，最开始没有什么技术，就只托管到了一些博客网站，从国内的点点到国外的Weebly，一直觉得用的很不爽，总觉得一直用博客网站的模板不自由（虽然可以自己改写css),不能体现自己独（zhuang）特(bi)的个性. 后来还想过使用Wordpress，但是还是觉得wp实在是太老的技术了，作为一个新时代的Coder，怎么还能用十年前的技术呢.于是在这个周六的早上，睡到了十二点然后就决定起来把博客迁移到Octopress.</p>
+
+<!--more-->
+
+
+<p> <img src="/images/blog_image/octopress.jpg"></p>
+
+<p> Octopress号称A blogging framework for hackers，自然少不了折腾。官方介绍是基于Jekyll的静态博客生成系统，原理是自己在本地搭建一个博客目录经过Markdown和Liquid转换，在本地生成静态页面，再通过Git部署到Github上. 由于Github可以让用户自己生成Page，这样连买主机的钱都省了，只需要买个域名就可以搭建自己的独立博客了。</p>
+
+<p> 简单说下这次的建站感受，由于之前玩过Ruby,所以很简单的在bash里面就可以直接安装文档装Gem了，按照官方文档走一遍程序基本上一两个小时就可以搭好所需要的一切环境。接下来写文章就容易了，<code>rake new_post["title"]</code>就在本地生成一个Markdown文件，然后自己修改Markdown文件就可以写好日志，接着<code>rake generate</code>就可以在本地把Markdown文件转换成静态Jekyll网页，<code>rake preview</code>可以在本地<a href="http://localhost:4000/">http://localhost:4000/</a>预览生成的页面，觉得不错就可以发布到服务器了，<code>rake deploy</code>.</p>
+
+<p> 当然，要是建网站这么简单，怎么会叫A blogging framework for hackers呢，就算按照官方程序走一遍都会遇到一些小问题，下篇文章就来说说怎么解决这些问题的。</p>
+
+<p> 最后推荐一个Markdown编辑器，<a href="http://mouapp.com/">Mou</a>，国内一个独立开发者写的，用过的都说好。</p>
+]]></content>
+  </entry>
+  
+</feed>

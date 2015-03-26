@@ -1,0 +1,316 @@
+<html>
+<head>
+
+
+<style>
+body { background-color: #fafafa; font-family:arial; font-size:13px }
+#container, #containertop	{	width:860px; margin: 0 auto; 	}
+
+.borderclass { border:1px solid #A9B6D2; }
+.item {
+  width: 408px;
+  margin: 10px;
+  float: left;
+  margin-top:10px;
+  background-color:#fafafa;
+  border:solid 1px #B4BBCD;
+min-height:50px;
+text-align:justify;
+word-wrap:break-word; 
+}
+.topbox
+{
+margin: 10px;
+
+
+margin-top: 10px;
+background-color: white;
+border: solid 1px #B4BBCD;
+
+}
+
+
+.item div, .topbox div
+{
+padding:8px;	
+}
+.rightCorner { 
+    background-image: url("images/right.png");
+    display: block;
+    height: 15px;
+    margin-left: 408px;
+    margin-top: 8px;
+    padding: 0;
+    vertical-align: top;
+    width: 13px;
+z-index:2;
+
+	position: absolute;
+}
+.leftCorner{
+background-image: url("images/left.png");
+display: block;
+height: 15px;
+width: 13px;
+margin-left: -13px;
+margin-top: 8px;
+position: absolute;
+z-index:2;
+}
+#popup{ display: block; 
+ width: 408px;
+  float: left;
+  margin-top:10px;
+  background-color:#fafafa;
+  border:solid 1px #A9B6D2;
+  min-height:60px;
+  display:none;
+  position:absolute;
+  margin:10px;
+ }
+.Popup_rightCorner
+{
+background-image: url("images/right.png");
+    display: block;
+    height: 15px;
+    margin-left: 408px;
+    margin-top: 8px;
+    padding: 0;
+    vertical-align: top;
+    width: 13px;
+z-index:2;
+
+	position: absolute;
+}
+ #box
+{
+padding:8px;	
+
+}
+#update
+{
+width:100%;
+}
+
+ .timeline_container{
+                width: 16px;
+                text-align: center;
+                margin: 0 auto;
+				cursor:pointer;
+				    display: block;
+            }
+            .timeline{
+                                
+                margin: 0 auto;
+				 background-color:#fafafa;
+    display: block;
+    float: left;
+    height: 100%;
+    left: 428px;
+    margin-top: 10px;
+    position: absolute;
+    width: 4px;
+            }
+            .timeline:hover{
+                cursor: pointer;
+				margin: 0 auto;
+            }
+            .timeline div.plus{
+                width: 14px;
+                height: 14px;
+               
+                position: relative;
+                left: -6px;
+            }
+			#update_button {
+background-color: #fafafa;
+color: white;
+font-weight: bold;
+padding: 5px;
+border: solid 1px #333;
+margin-top: 5px;
+cursor: pointer;
+}
+.shade{box-shadow:0px 0px 18px #000;-moz-box-shadow:0px 0px 18px #000;-webkit-box-shadow:0px 0px 18px #000}
+h1{ font-family: 'Georgia',Times New Roman; }
+.timeline:hover
+{
+cursor: none;
+}
+.deletebox
+{
+font-weight:bold;
+float:right;
+text-decoration:none;
+margin:8px 10px 8px 10px;
+color:#cc0000
+}
+</style>
+</head>
+<body>
+ <div id="containertop" >
+ <div id='profile' style='margin:10px;height:100px'>
+ <img src='http://octopresspicture.qiniudn.com/profile.jpg?token=-4MmlWfsoLb2NV2ayPA5cAbmq37JvYKCCa6IXTGy:_kfs9_RiaEOoQCsuBOPSNZEgxZU=:eyJTIjoib2N0b3ByZXNzcGljdHVyZS5xaW5pdWRuLmNvbS9wcm9maWxlLmpwZyIsIkUiOjEzOTg5MTA2NDN9' style='border:solid 2px #fafafa;float:left;width:100px;height:100px' alt='Stevenlordiam'/>
+ <h1 style='margin-left:120px'>Test</h1>
+<h2 style='margin-left:120px'>Stevenlordiam </h2>
+
+
+ </div>
+
+</div>
+  <div id="container">
+    
+       <div class="timeline_container">
+            <div class="timeline">
+                <div class="plus"></div>
+            </div>
+        </div>
+	 
+	  <div class="item ">
+           <a href='#' class='deletebox'>X</a>
+	  		<div>Page1 
+</div>
+	  	</div>
+<div class="item ">
+ <a href='#' class='deletebox'>X</a>
+	  	<div>Page2 </div>		
+	  </div>
+	  <div class="item ">
+ <a href='#' class='deletebox'>X</a>
+	  		<div>Page3</div>
+	  </div>
+	  
+	  <div class="item">
+ <a href='#' class='deletebox'>X</a>
+	  		<div>Page4</div>		
+	  	</div>
+	  <div class="item">
+ <a href='#' class='deletebox'>X</a>
+	  		<div>Page5</div>		
+	  	</div>
+	  <div class="item">
+ <a href='#' class='deletebox'>X</a>
+	  		<div>Page6</div>		
+	  </div>
+	  
+	 <div id="popup" class='shade'>
+	 		
+		<div class="Popup_rightCorner" >	</div>
+		<div id='box'>
+		<b>What's Up?</b><br/>
+		<textarea id='update'></textarea>
+		<input type='submit' value=' Update ' id='update_button'/>
+         </div>
+	
+	</div>
+	</div>
+	
+		
+	</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="jquery.masonry.min.js"></script>
+
+<script>
+$(function(){
+
+
+function Arrow_Points()
+{ 
+var s = $('#container').find('.item');
+$.each(s,function(i,obj){
+var posLeft = $(obj).css("left");
+$(obj).addClass('borderclass');
+if(posLeft == "0px")
+{
+html = "<span class='rightCorner'></span>";
+$(obj).prepend(html);			
+}
+else
+{
+html = "<span class='leftCorner'></span>";
+$(obj).prepend(html);
+}
+});
+}
+
+$('.timeline_container').mousemove(function(e)
+{
+var topdiv=$("#containertop").height();
+var pag= e.pageY - topdiv-26;
+$('.plus').css({"top":pag +"px", "background":"url('images/plus.png')","margin-left":"1px"});}).
+mouseout(function()
+{
+$('.plus').css({"background":"url('')"});
+});
+	
+	
+				
+$("#update_button").live('click',function()
+{
+var x=$("#update").val();
+$("#container").prepend('<div class="item"><a href="#" class="deletebox">X</a><div>'+x+'</div></div>');
+
+//Reload masonry
+$('#container').masonry( 'reload' );
+
+$('.rightCorner').hide();
+$('.leftCorner').hide();
+Arrow_Points();
+
+$("#update").val('');
+$("#popup").hide();
+return false;
+});
+
+// Divs
+$('#container').masonry({itemSelector : '.item',});
+Arrow_Points();
+  
+//Mouseup textarea false
+$("#popup").mouseup(function() 
+{
+return false
+});
+  
+$(".timeline_container").click(function(e)
+{
+var topdiv=$("#containertop").height();
+$("#popup").css({'top':(e.pageY-topdiv-33)+'px'});
+$("#popup").fadeIn();
+$("#update").focus();
+
+	
+});  
+
+
+$(".deletebox").live('click',function()
+{
+if(confirm("Are your sure?"))
+{
+$(this).parent().fadeOut('slow');  
+//Remove item
+$('#container').masonry( 'remove', $(this).parent() );
+//Reload masonry
+$('#container').masonry( 'reload' );
+$('.rightCorner').hide();
+$('.leftCorner').hide();
+Arrow_Points();
+}
+return false;
+});
+
+
+
+//Textarea without editing.
+$(document).mouseup(function()
+{
+$('#popup').hide();
+
+});
+ 
+  
+});
+</script>
+
+</body>
+</html>

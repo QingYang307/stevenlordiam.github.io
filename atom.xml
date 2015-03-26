@@ -1,16 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2013-11-23T21:04:19-05:00</updated>
+  <updated>2015-03-26T19:26:54-04:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
-    
+    <name><![CDATA[Stevenlordiam]]></name>
+    <email><![CDATA[stevenlordiam@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cracking the Coding Interview]]></title>
+    <link href="http://stevenlordiam.github.io/blog/20141107/"/>
+    <updated>2014-11-07T01:04:45-05:00</updated>
+    <id>http://stevenlordiam.github.io/blog/cracking-the-coding-interview</id>
+    <content type="html"><![CDATA[<p>I start to write code for the book <strong>Cracking the Coding Interview</strong> today, and I will post my code to <a href="https://github.com/stevenlordiam/CC150">my Github page</a> daily to keep track. You are welcomed to fork.</p>
+
+<p>I implement the programs in Java language, and after I finish all the code, I will provide Python and C++ implement.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[2013]]></title>
+    <link href="http://stevenlordiam.github.io/blog/20140102/"/>
+    <updated>2014-01-02T06:22:08-05:00</updated>
+    <id>http://stevenlordiam.github.io/blog/2013zong-jie</id>
+    <content type="html"><![CDATA[<p>2013年末刚从纽约回上海，时差还没倒过来，跨年就这么睡过了，因此新年的第一天起得也特别早。</p>
+
+<!--more-->
+
+
+<p>2013的确是人生中比较重要的一年。1月份，我在武汉那间自己的小房子里焦急的等待着Offer, 之前收到了Virginia某大学某清华女AP发的Offer，纸质的offer都寄到了，我都准备开开心心的去Virginia读PhD然后当一个电力系统工程师，后来竟然被反悔，这件事之后我才知道，学长们说的找导师不要找亚裔不要找女老师不要找AP果然是真的。这时赶紧申了现在的学校，后来也顺利的拿到了录取。这件事后我反思了很久，也许不是坏事，要是真的就这么去读了电力系统也许不那么快乐，读五年自己不喜欢的东西说不定还不能按时毕业。我注定要当个程序员。</p>
+
+<p>2月份，回家里过春节，拿着一把I20研究到底去哪里。最后在USC和NYU之间犹豫不决，最终还是选了个便宜的NYU，我至今还在思考这个决定到底对不对，大家都去了温暖的LA而我偏来NY，这样是不是机会会更多？谁知道呢。3月份4月份5月份，和妹子一起度过了最美好的毕业季。6月份，终于毕业了，妹子也去了广州，我一个人回家里，白天睡到中午，吃个饭起来上网码代码，参与了几个开源项目。7月份8月份，收拾了一堆东西跑到了纽约，短暂的兴奋期过后感觉到妹子不在身边无边的孤独。9月10月11月12月，写作业上课考试写作业上课考试写作业上课考试。</p>
+
+<p>现在回头看看整个13年，迈出了人生中重要的一步，但同时也越来越有危机感，再过半年就到了23岁，基本上30岁前的黄金年龄都走过了四分之一，而自己还是窝在纽约一个小公寓里每天上课写作业。认识的同龄人有人炒比特币手持五位数比特币，有的已经在Google实习，有的已经拿到了投资，同样是写代码的，他们只是没有每天在写作业考试上浪费时间。这也表明了我的确不适合走学术道路，也无谓在名字前面加一个Dr.</p>
+
+<p>2014年，我希望自己能开发完list里的那一堆产品，争取参加下半年NYU Hackathon，找到个Partner拿到投资最好；希望自己能坚持去Gym锻炼身体。好好锻炼，好好编程，这就是我新年的愿望了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How I Fixed Octopress Installing Issues]]></title>
+    <link href="http://stevenlordiam.github.io/blog/20131124/"/>
+    <updated>2013-11-24T14:15:27-05:00</updated>
+    <id>http://stevenlordiam.github.io/blog/code-preview</id>
+    <content type="html"><![CDATA[<p>In this post I will talk about the installing issues I met and how I fixed them when I tried to install Octopress from the official Octopress website.</p>
+
+<p>1.No such directory</p>
+
+<p>It&rsquo;s easy, just change the path.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd </span>octopress
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!--more-->
+
+
+<p>2.Github Page 404</p>
+
+<p>Because you don&rsquo;t host the Github page correctly，previously Github use <em>username.github.com</em>，but now it&rsquo;s <em>username.github.io</em>. If you want your own domain，change both A record and CNAME.</p>
+
+<p>3.I met this when I configured git and used <code>rake deploy</code></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>! <span class="o">[</span>rejected<span class="o">]</span>        master -&gt; master <span class="o">(</span>non-fast-forward<span class="o">)</span>
+</span><span class='line'>error: failed to push some refs to <span class="s1">&#39;https://github.com/stevenlordiam/stevenlordiam.github.io.git&#39;</span>
+</span><span class='line'>hint: Updates were rejected because the tip of your current branch is behind
+</span><span class='line'>hint: its remote counterpart. Merge the remote changes <span class="o">(</span>e.g. <span class="s1">&#39;git pull&#39;</span><span class="o">)</span>
+</span><span class='line'>hint: before pushing again.
+</span><span class='line'>hint: See the <span class="s1">&#39;Note about fast-forwards&#39;</span> in <span class="s1">&#39;git push --help&#39;</span> <span class="k">for </span>details.
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Many people asked the same question on stackoverflow, I tried to Google but none can fix this. Some said it&rsquo;s SSH problem, some say it&rsquo;s version collision of git. Finally I fixed this problem by this step:
+master branch is in <code>octopress/_depoly</code>, pull after going into this folder and come back to octopress folder and deploy. It works!</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd </span>octopress/_deploy
+</span><span class='line'>git pull origin master
+</span><span class='line'><span class="nb">cd</span> ..
+</span><span class='line'>rake deploy
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The blog is almost set. Next step：</p>
+
+<p><del>-Add Tag Cloud</del></p>
+
+<p>-Make the webpage load faster</p>
+
+<p>-Mobile page optimization</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[迁移到了Octopress]]></title>
+    <link href="http://stevenlordiam.github.io/blog/20131123/"/>
+    <updated>2013-11-23T22:59:02-05:00</updated>
+    <id>http://stevenlordiam.github.io/blog/xin-bo-ke-di-[?]-pian-wen-zhang</id>
+    <content type="html"><![CDATA[<p>之前一直在不同的地方写博客，最开始没有什么技术，就只托管到了一些博客网站，从国内的点点到国外的Weebly，一直觉得用的很不爽，总觉得一直用博客网站的模板不自由（虽然可以自己改写css),不能体现自己独（zhuang）特(bi)的个性. 后来还想过使用Wordpress，但是还是觉得wp实在是太老的技术了，作为一个新时代的Coder，怎么还能用十年前的技术呢.于是在这个周六的早上，睡到了十二点然后就决定起来把博客迁移到Octopress.</p>
+
+<!--more-->
+
+
+<p> <img src="http://stevenlordiam.github.io/images/blog_image/octopress.jpg"></p>
+
+<p> Octopress号称A blogging framework for hackers，自然少不了折腾。官方介绍是基于Jekyll的静态博客生成系统，原理是自己在本地搭建一个博客目录经过Markdown和Liquid转换，在本地生成静态页面，再通过Git部署到Github上. 由于Github可以让用户自己生成Page，这样连买主机的钱都省了，只需要买个域名就可以搭建自己的独立博客了。</p>
+
+<p> 简单说下这次的建站感受，由于之前玩过Ruby,所以很简单的在bash里面就可以直接安装文档装Gem了，按照官方文档走一遍程序基本上一两个小时就可以搭好所需要的一切环境。接下来写文章就容易了，<code>rake new_post["title"]</code>就在本地生成一个Markdown文件，然后自己修改Markdown文件就可以写好日志，接着<code>rake generate</code>就可以在本地把Markdown文件转换成静态Jekyll网页，<code>rake preview</code>可以在本地<a href="http://localhost:4000/">http://localhost:4000/</a>预览生成的页面，觉得不错就可以发布到服务器了，<code>rake deploy</code>.</p>
+
+<p> 当然，要是建网站这么简单，怎么会叫A blogging framework for hackers呢，就算按照官方程序走一遍都会遇到一些小问题，下篇文章就来说说怎么解决这些问题的。</p>
+
+<p> 最后推荐一个Markdown编辑器，<a href="http://mouapp.com/">Mou</a>，国内一个独立开发者写的，用过的都说好。</p>
+]]></content>
+  </entry>
   
 </feed>
