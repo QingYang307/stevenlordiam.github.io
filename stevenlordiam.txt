@@ -1,5 +1,5 @@
 <span id="a">steven@lordiam</span>:<span id="b">~</span><span id="c">$</span> cat stevenlordiam.txt<br/><br/>
-Hi, I'm Steven.<!-- qowifjqwoeijfoqweijfqweoifjqweofijqweoqwoijefoqwijefoijfqiwoefjj -->
+<p>Hi, I'm Steven.</p><!-- qowifjqwoeijfoqweijfqweoifjqweofijqweoqwoijefoqwijefoijfqiwoefjj -->
 <p>I am a graduate student in NYU and a creative coder in Java/Python/Swift.</p><!-- qowifjqwoeijfoqweijfqweoifjqweofijqweoqwoijefoqwijefoijfqiwoefjj -->
 <p>I enjoy writing code, and I have several projects to show you on <a href="https://github.com/stevenlordiam">Github</a>.</p><!-- qowifjqwoeijfoqweijfqweoifjqweofijqweoqwoijefoqwijefoijfqiwoefjj -->
 <p>I am currently looking for a full-time software developer job.</p><!-- qowifjqwoeijfoqweijfqweoifjqweofijqweoqwoijefoqwijefoijfqiwoefjj -->
