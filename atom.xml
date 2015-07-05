@@ -4,7 +4,7 @@
   <title><![CDATA[Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2015-07-01T16:32:14-04:00</updated>
+  <updated>2015-07-05T01:12:59-04:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
     <name><![CDATA[Stevenlordiam]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Opensourced Two Projects]]></title>
+    <link href="http://stevenlordiam.github.io/blog/20150705/"/>
+    <updated>2015-07-05T01:06:45-04:00</updated>
+    <id>http://stevenlordiam.github.io/blog/opensourced-two-projects</id>
+    <content type="html"><![CDATA[<p>After almost three months work, I have finished all the solutions for <strong>leetcode</strong> and <strong>lintcode</strong>. All the solutions are optimal and are mine from the internet, with reference attached.</p>
+
+<p>Here are the links:</p>
+
+<p><a href="https://github.com/stevenlordiam/Leetcode">Leetcode</a></p>
+
+<p><a href="https://github.com/stevenlordiam/Lintcode">Lintcode</a></p>
+
+<p>Any advice is appreciated and welcome to fork and pull request.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cracking the Coding Interview]]></title>

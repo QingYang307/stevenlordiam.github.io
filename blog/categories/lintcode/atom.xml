@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Code | Steven's Blog]]></title>
-  <link href="http://stevenlordiam.github.io/blog/categories/code/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Lintcode | Steven's Blog]]></title>
+  <link href="http://stevenlordiam.github.io/blog/categories/lintcode/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
   <updated>2015-07-05T01:12:59-04:00</updated>
   <id>http://stevenlordiam.github.io/</id>
@@ -27,17 +27,6 @@
 <p><a href="https://github.com/stevenlordiam/Lintcode">Lintcode</a></p>
 
 <p>Any advice is appreciated and welcome to fork and pull request.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cracking the Coding Interview]]></title>
-    <link href="http://stevenlordiam.github.io/blog/20141107/"/>
-    <updated>2014-11-07T01:04:45-05:00</updated>
-    <id>http://stevenlordiam.github.io/blog/cracking-the-coding-interview</id>
-    <content type="html"><![CDATA[<p>I start to write code for the book <strong>Cracking the Coding Interview</strong> today, and I will post my code to <a href="https://github.com/stevenlordiam/CC150">my Github page</a> daily to keep track. You are welcomed to fork.</p>
-
-<p>I implement the programs in Java language, and after I finish all the code, I will provide Python and C++ implement.</p>
 ]]></content>
   </entry>
   
