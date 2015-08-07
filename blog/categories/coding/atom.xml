@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Coding | Steven's Blog]]></title>
+  <link href="http://stevenlordiam.github.io/blog/categories/coding/atom.xml" rel="self"/>
+  <link href="http://stevenlordiam.github.io/"/>
+  <updated>2015-08-06T22:17:33-04:00</updated>
+  <id>http://stevenlordiam.github.io/</id>
+  <author>
+    <name><![CDATA[Stevenlordiam]]></name>
+    <email><![CDATA[stevenlordiam@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A Crawler for Jiandan - JDCrawler]]></title>
+    <link href="http://stevenlordiam.github.io/blog/20150711/"/>
+    <updated>2015-07-11T21:55:51-04:00</updated>
+    <id>http://stevenlordiam.github.io/blog/jdcrawler</id>
+    <content type="html"><![CDATA[<p>There is a famous website in China called jiandan.net, and there is a section for geeks where you can find many pictures hosted on SinaAppEngine. I am tired of browsing the pictures page by page so I decided to wrote a web crawler to download all the pictures to my local computer. :)</p>
+
+<!--more-->
+
+
+<p>You can see a demo below</p>
+
+<p><img src="https://github.com/stevenlordiam/JDCrawler/blob/master/demo.png" alt="Demo" /></p>
+
+<p>What it actually do is :</p>
+
+<ol>
+<li>parse the image link</li>
+<li>get the source of the image and fetch the meta data</li>
+<li>store the images in <code>./image</code> folder and sort them by page number</li>
+<li>use a status indicator to show the process</li>
+<li>use a <code>user_agent_list</code> to dynamically change the user agent, avoiding the 503 forbid error caused by rapidly access the sina app engine image database</li>
+</ol>
+
+
+<p>I have open sourced this crawler and you can find the source code on <a href="https://github.com/stevenlordiam/JDCrawler">JDCrawler</a>.</p>
+
+<p>Enjoy.</p>
+]]></content>
+  </entry>
+  
+</feed>

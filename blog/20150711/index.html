@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Categories - Steven's Blog</title>
+  <title>A Crawler for Jiandan - JDCrawler - Steven's Blog</title>
   <meta name="author" content="Stevenlordiam">
 
   
-  <meta name="description" content=" Categories Blog, [ 1 ] Octopress [ 2 ] Code, [ 1 ] 杂谈 [ 1 ] Code [ 2 ] Leetcode [ 1 ] Lintcode [ 1 ] Coding [ 1 ] Python [ 1 ] ">
+  <meta name="description" content="There is a famous website in China called jiandan.net, and there is a section for geeks where you can find many pictures hosted on SinaAppEngine. I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://stevenlordiam.github.io/blog/categories">
+  <link rel="canonical" href="http://stevenlordiam.github.io/blog/20150711">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Steven's Blog" type="application/atom+xml">
@@ -87,45 +87,16 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Categories</h1>
-    <p class="meta">
-
-
-
-
-</p>
-  </header>
-  
-  <ul>
-
-    <li><a href="/blog/categories/Blog,/">Blog,</a> [ 1 ]</li>
-
-    <li><a href="/blog/categories/Octopress/">Octopress</a> [ 2 ]</li>
-
-    <li><a href="/blog/categories/code,/">Code,</a> [ 1 ]</li>
-
-    <li><a href="/blog/categories/杂谈/">杂谈</a> [ 1 ]</li>
-
-    <li><a href="/blog/categories/code/">Code</a> [ 2 ]</li>
-
-    <li><a href="/blog/categories/Leetcode/">Leetcode</a> [ 1 ]</li>
-
-    <li><a href="/blog/categories/Lintcode/">Lintcode</a> [ 1 ]</li>
-
-    <li><a href="/blog/categories/Coding/">Coding</a> [ 1 ]</li>
-
-    <li><a href="/blog/categories/Python/">Python</a> [ 1 ]</li>
-
-</ul>
-
-
-  
-    <footer>
+    
+      
+        <h1 class="entry-title">A Crawler for Jiandan - JDCrawler</h1>
+      
+    
+    
       <p class="meta">
-        
         
 
 
@@ -134,9 +105,83 @@
 
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>There is a famous website in China called jiandan.net, and there is a section for geeks where you can find many pictures hosted on SinaAppEngine. I am tired of browsing the pictures page by page so I decided to wrote a web crawler to download all the pictures to my local computer. :)</p>
+
+<!--more-->
+
+
+<p>You can see a demo below</p>
+
+<p><img src="https://github.com/stevenlordiam/JDCrawler/blob/master/demo.png" alt="Demo" /></p>
+
+<p>What it actually do is :</p>
+
+<ol>
+<li>parse the image link</li>
+<li>get the source of the image and fetch the meta data</li>
+<li>store the images in <code>./image</code> folder and sort them by page number</li>
+<li>use a status indicator to show the process</li>
+<li>use a <code>user_agent_list</code> to dynamically change the user agent, avoiding the 503 forbid error caused by rapidly access the sina app engine image database</li>
+</ol>
+
+
+<p>I have open sourced this crawler and you can find the source code on <a href="https://github.com/stevenlordiam/JDCrawler">JDCrawler</a>.</p>
+
+<p>Enjoy.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-    </footer>
   
+
+
+
+  <span class="byline author vcard">Authored by <span class="fn">
+  
+    Stevenlordiam
+  
+  </span></span>
+
+
+      
+
+
+
+
+
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/coding/'>Coding</a>, <a class='category' href='/blog/categories/python/'>Python</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/20150705/" title="Previous Post: Opensourced two projects">&laquo; Opensourced two projects</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 
