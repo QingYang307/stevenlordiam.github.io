@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: iOS | Steven's Blog]]></title>
+  <link href="http://stevenlordiam.github.io/blog/categories/ios/atom.xml" rel="self"/>
+  <link href="http://stevenlordiam.github.io/"/>
+  <updated>2015-08-06T23:05:00-04:00</updated>
+  <id>http://stevenlordiam.github.io/</id>
+  <author>
+    <name><![CDATA[Stevenlordiam]]></name>
+    <email><![CDATA[stevenlordiam@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A New iOS Side Menu Demo]]></title>
+    <link href="http://stevenlordiam.github.io/blog/20150806/"/>
+    <updated>2015-08-06T22:45:49-04:00</updated>
+    <id>http://stevenlordiam.github.io/blog/a-new-ios-side-menu-demo</id>
+    <content type="html"><![CDATA[<p>Recently I was developing an iOS app for leetcode, I found when displaying the content menu, <a href="https://github.com/romaonthego/RESideMenu">RESideMenu</a> is good at showing the parallax effect for iOS 7/8 app. So I decided to deploy it on my app. But when I was adding more <code>UIViewController</code> to it, it had a bug. You can find the detailed issue I posted <a href="https://github.com/romaonthego/RESideMenu/issues/252">here</a>.</p>
+
+<!--more-->
+
+
+<p>After some source code reading, I found the solution: creating a subclass of <code>UIViewController</code> instead of <code>RESideMenu</code> as the README of RESideMenu said. Because the new <code>UIViewController</code> will behave as a separate <code>View</code> rather than the RESideMenu behavior. So you cannot connect them.</p>
+
+<p>Beside fixing this bug, I also add more view to this project. You can see a demo below.</p>
+
+<p> <img src="/images/blog_image/SideMenu.gif"></p>
+
+<p>I have open sourced this project as a fork of <a href="https://github.com/romaonthego/RESideMenu">RESideMenu</a> and you can find the source code on <a href="https://github.com/stevenlordiam/SideMenu">SideMenu</a>.</p>
+
+<p>Please make pull request or submit an issue if you have any advice.</p>
+]]></content>
+  </entry>
+  
+</feed>
