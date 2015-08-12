@@ -4,7 +4,7 @@
   <title><![CDATA[Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2015-08-11T21:47:08-04:00</updated>
+  <updated>2015-08-11T22:51:10-04:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
     <name><![CDATA[Stevenlordiam]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[New iOS App for Leetcode - Leet]]></title>
+    <link href="http://stevenlordiam.github.io/blog/20150811/"/>
+    <updated>2015-08-11T22:35:17-04:00</updated>
+    <id>http://stevenlordiam.github.io/blog/new-ios-app-for-leetcode-leet</id>
+    <content type="html"><![CDATA[<p>As I said in last blog, I have decided to develop a new iOS app for leetcode. I finished it in three days for the first version. After fixing some bugs and updated the UI for iPhone 6 and 6 Plus, I summited it to the App Store.</p>
+
+<!--more-->
+
+
+<p>You can see a demo as follow. Since it&rsquo;s the first version so it&rsquo;s pretty raw and needs further improvement. For instance, I haven&rsquo;t added the account login feature, and the UI needs more polish. I will solve these problems in the coming updates.</p>
+
+<p> <img src="http://stevenlordiam.github.io/images/blog_image/demo.gif"></p>
+
+<p>I have hosted it on Github, maybe someday I will open source it.</p>
+
+<p>Please download and try it yourself <a href="https://github.com/stevenlordiam/leet">here</a>. I appreciate any advice.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A New iOS Side Menu Demo]]></title>
