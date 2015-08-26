@@ -4,7 +4,7 @@
   <title><![CDATA[Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2015-08-25T15:42:44-04:00</updated>
+  <updated>2015-08-25T22:30:52-04:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
     <name><![CDATA[Stevenlordiam]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Introducing Leet 1.2 for iOS]]></title>
+    <link href="http://stevenlordiam.github.io/blog/20150825/"/>
+    <updated>2015-08-25T22:01:48-04:00</updated>
+    <id>http://stevenlordiam.github.io/blog/introducing-leet-1-dot-2-for-ios</id>
+    <content type="html"><![CDATA[<p>Thanks for all your support for <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1028148007&amp;mt=8">Leet</a>. I received many feedbacks and I had put all your feature request in my developing plan. So last weekend I spent one day developing some highly requested features.</p>
+
+<!--more-->
+
+
+<p>First thing you would love, all solutions for Leetcode! After I launched this app, <a href="http://www.jiuzhang.com">Jiuzhang</a> contacted me and gave me credit to use their <a href="http://www.jiuzhang.com/solutions/">solutions</a>. So I wrote a web crawler in Python to get all the solutions. I also use &ldquo;Show/Hide Answer&rdquo; button in my app to show/hide the solutions, of course, codes are syntax highlighted.</p>
+
+<p>Second, I have made reviewing the problems and answers easier by supporting landscape mode. You can now rotate your iPhone or iPad to review them in a much wider way.</p>
+
+<p>Also, I have added notification for you to remind you to &ldquo;shua-ti&rdquo; everyday, now you will never miss a day to review leetcode problems.</p>
+
+<p>Please rate it if you think <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1028148007&amp;mt=8">Leet</a> is helpful. Also if you find any bug or have any advice, send me an email in this app. I appreciate it.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[New iOS App for Leetcode - Leet]]></title>
