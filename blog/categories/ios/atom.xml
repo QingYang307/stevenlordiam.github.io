@@ -4,7 +4,7 @@
   <title><![CDATA[Category: iOS | Steven's Blog]]></title>
   <link href="http://stevenlordiam.github.io/blog/categories/ios/atom.xml" rel="self"/>
   <link href="http://stevenlordiam.github.io/"/>
-  <updated>2015-08-25T22:30:52-04:00</updated>
+  <updated>2015-09-09T20:02:59-04:00</updated>
   <id>http://stevenlordiam.github.io/</id>
   <author>
     <name><![CDATA[Stevenlordiam]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[What's New in Leet 1.3 for iOS]]></title>
+    <link href="http://stevenlordiam.github.io/blog/20150909/"/>
+    <updated>2015-09-09T19:41:53-04:00</updated>
+    <id>http://stevenlordiam.github.io/blog/whats-new-in-leet-1-dot-3-for-ios</id>
+    <content type="html"><![CDATA[<p>Ever since <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1028148007&amp;mt=8">Leet</a> is launched on the App Store, it has been popular among students looking for technical jobs. I received feedbacks everyday about the new feature request and five star ratings in the App Store, thank you very much.</p>
+
+<!--more-->
+
+
+<p>So based on the most highly requested features, I introduce the 1.3 version of Leet, it has some great features you will love and will be available to upgrade in a few days.</p>
+
+<p>First, browsing the coding problems by difficulty. Now you can tap the title in the problem list and choose the difficulty in the drop down menu.</p>
+
+<p>Second, I have added the discussion section in the answer, now you can see other people&rsquo;s solution and compare them to yours. Cheers!</p>
+
+<p>Third, you can now use a botton to review the answers in landscape mode, no rotation needed (but you can always rotate it, it&rsquo;s your call). Also, two finger pinch is supported in case you need to zoom in the answer section.</p>
+
+<p>Last but not least, I used some magic to speed up the loading, now you can enjoy the super fast speed of this app when reviewing the coding problems.</p>
+
+<p>Please rate it if you think <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1028148007&amp;mt=8">Leet</a> is helpful, and recommend it to your friends, the more people using it, the better it can be. Also if you find any bug or have any advice, send me an email in this app. I appreciate it.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Introducing Leet 1.2 for iOS]]></title>
